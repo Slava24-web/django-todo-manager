@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}
+                Base title
+            {% endblock title %}
+        </title>
+    </head>
+
+    {% include 'components/navbar.html' %}
+
+    <body>
+        {% block body %}
+            Base body
+        {% endblock body %}
+    </body>
+
+    <footer>
+        &copy; Django TODO App
+    </footer>
+</html>
